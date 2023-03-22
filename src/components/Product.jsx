@@ -66,10 +66,14 @@ const Product = ({item}) => {
       <Image src={item.img}/>
       <Info>
         <Icon>
+         <Link to={`/product`}>
         <ShoppingCartOutlinedIcon/>
+         </Link> 
         </Icon>
         <Icon>
+         <Link to={`/productlist`}>
         <SearchOutlinedIcon />
+         </Link>
         </Icon>
         <Icon>
        <FavoriteBorderOutlinedIcon/> 
