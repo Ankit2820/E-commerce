@@ -7,7 +7,6 @@ import Cart from "./pages/Cart";
 import {
   createBrowserRouter,
   RouterProvider, 
-  Route,
 } from "react-router-dom";
 function App() {
 const router = createBrowserRouter([
