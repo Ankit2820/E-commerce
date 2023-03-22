@@ -4,6 +4,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { Badge } from '@mui/material';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import {mobile} from "../responsive"
+import { Link } from 'react-router-dom';
 const Container = styled.div`
    height: 60px;  
    ${mobile({ height: "50px" })}
