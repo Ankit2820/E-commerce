@@ -4,6 +4,7 @@ import Product from "./pages/Product";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
+import Logins from "./pages/Logins";
 import {
   createBrowserRouter,
   RouterProvider, 
@@ -28,8 +29,8 @@ const router = createBrowserRouter([
   element: <Register />,
 },
 {
-  path: "/login",
-  element: <Login />,
+  path: "/logins",
+  element: <Logins />,
 },
 {
   path: "/login",
