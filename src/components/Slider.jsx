@@ -3,15 +3,17 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useState } from "react";
 import styled from "styled-components"
 import { sliderItems } from "../data";
-import { mobile } from "../responsive";
 const Container = styled.div`
     widh: 100%;
     height: 100vh;
     display: flex;
    position: relative;
    overflow: hidden;
-   ${mobile({ display: "none" })}
+  @media only screen and (max-width: 390px){
+    display: none;
+   }
 `
+
 
 const Arrow = styled.div`
     width: 50px;
