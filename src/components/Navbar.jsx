@@ -3,20 +3,23 @@ import styled from 'styled-components';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { Badge } from '@mui/material';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import {mobile} from "../responsive"
 import { Link } from 'react-router-dom';
 const Container = styled.div`
    height: 60px;  
-   ${mobile({ height: "50px" })}
+  @media only screen and (max-width: 390px){
+    height: 50px; 
    }
 `;
+ 
 const Wrapper = styled.div`
    padding: 10px 20px;
    display:flex;
    align-items: center;
    justify-content: space-between;  
-  ${mobile({ padding: "10px 0px" })}
+    @media only screen and (max-width: 390px){
+   padding:10px 0px;}
 `;
+
 const Left = styled.div`
 flex:1;
 display: flex;
@@ -25,7 +28,9 @@ align-item: center;
 const Language = styled.span`
  font-size: 14px;
  cursor: pointer;
- ${mobile({ display: "none" })}
+ @media only screen and (max-width: 390px){
+   display: none;
+ }
 `;
 const  SearchContainer= styled.div`
   border: 0.5px solid lightgray;
@@ -33,10 +38,14 @@ const  SearchContainer= styled.div`
   align-item: center;
   margin-left: 25px;
   padding: 5px;
+   @media only screen and (max-width: 390px){
+   margin-left: 5px;
+ }
 `
 const Input = styled.input`
  border: none;
- ${mobile({ width: "50px" })}
+@media only screen and (max-width: 390px){
+  width: 50px;}
 `
 const Center = styled.div`
 flex: 1
@@ -45,21 +54,27 @@ flex: 1
 const Logo = styled.h1`
    font-weight: bold;
    text-align: center;
-   ${mobile({ fontSize: "24px" })}
+  @media only screen and (max-width: 390px){
+   font-size: 24px; }  
 `
 const Right = styled.div`
 flex: 1;
 display: flex;
 align-items: center;
 justify-content: flex-end; 
-${mobile({ flex: 2, justifyContent: "center" })}
+@media only screen and (max-width: 390px){
+  flex: 2;
+  justifyContent: Center;}
 `;
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
-    ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+      @media only screen and (max-width: 390px){
+      margin-left: 8px;
+      margin-right: 5px;
+    }
 `
 
 const Navbar = () => {
