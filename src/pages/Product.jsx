@@ -46,6 +46,15 @@ const Price= styled.span`
      font-weight: 100;
      font-size: 40px;
 `
+const FilterContainer = styled.div`
+     width: 50%;
+     margin: 30px 0px;
+     display: flex;
+     justify-content: space-between;
+     @media only screen and (max-width: 390px){
+      width: 100%;
+      }
+   `
 const Filter = styled.div`
     display: flex;
     align-items: center;
