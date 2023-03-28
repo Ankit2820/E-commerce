@@ -6,10 +6,11 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import RoomIcon from '@mui/icons-material/Room';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { mobile } from "../responsive";
 const Container = styled.div`
 display: flex;
-${mobile({ flexDirection: "column" })}`
+@media only screen and (max-width: 390px){
+  flex-direction: column;
+ }`
 const Left = styled.div`
 flex: 1;
 display: flex;
@@ -40,7 +41,9 @@ margin-right: 20px;
 const Center = styled.div`
 flex: 1;
 padding: 20px;
-${mobile({ display: "none" })}
+@media only screen and (max-width: 390px){
+  display: none;
+ }
 `;
 
 const Title= styled.h3`
@@ -60,7 +63,9 @@ const ListItem = styled.li`
 const Right = styled.div`
 flex: 1;
 padding: 20px;
-${mobile({ backgroundColor: "#fff8f8" })}
+@media only screen and (max-width: 390px){
+  backgroundColor: #fff8f8
+ }
 `;
 
 const ContactItem = styled.div`
